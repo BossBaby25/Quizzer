@@ -32,6 +32,15 @@ const Blog = () => {
                 </div>
                 <div className="collapse-content text-content pt-4 ">
                 The useRef Hook allows you to persist values between renders. It can be used to store a mutable value that does not cause a re-render when updated. It can be used to access a DOM element directly.
+                
+                There are 2 rules to remember about references:
+                    <ul>
+                        <li>1.The value of the reference is persisted (stays the same) between component re-renderings;</li>
+                        <li>
+                        2.Updating a reference doesn't trigger a component re-rendering.
+                        </li>
+                    </ul>
+                    
                 </div>
             </div>
 

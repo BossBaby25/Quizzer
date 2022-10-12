@@ -40,7 +40,7 @@ const Quiz = () => {
                 </div>
                 {/* quiz score card  */}
                 <div className='text-center  w-80 mb-10'>
-                    <div className='bg-orange-300  rounded-2xl'>
+                    <div className='bg-blue-300  rounded-2xl'>
                         <div className='py-5'>
                             <button
                                 onClick={handleScoreShow}

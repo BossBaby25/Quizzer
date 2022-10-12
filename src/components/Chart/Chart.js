@@ -23,12 +23,12 @@ const Chart = () => {
 
     return (
         <div className='mt-12'>
-            <h1 className='text-2xl lg:text-5xl text-center my-10'> Four Types Chart </h1>
+            <h1 className='text-2xl lg:text-5xl text-center my-10'> Check Charts </h1>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5  lg:gap-10 mb-16">
                 {/* Line Chart Responsive*/}
 
                 <div className=" ">
-                    <h1 className=' text-2xl ml-10 mb-4 text-center'>Line Chart: <span className='text-blue-300'>Total Quizs Per Topic</span></h1>
+                    <h1 className=' text-2xl ml-10 mb-4 text-center'>Line Chart: <span className='text-blue-300'>Check Total Quizs Per Topic</span></h1>
                     <ResponsiveContainer width="90%" height={300} className="mx-auto ">
                         <LineChart data={chartData} margin={{
                             top: 20, right: 20, bottom: 20, left: 20,
@@ -44,7 +44,7 @@ const Chart = () => {
                 </div>
                 {/* Bar Chart  Responsive*/}
                 <div className="">
-                    <h1 className='text-2xl ml-10 mb-4 text-center'>Bar Chart: <span className='text-blue-300'>Total Quizs Per Topic</span></h1>
+                    <h1 className='text-2xl ml-10 mb-4 text-center'>Bar Chart: <span className='text-blue-300'>Check Total Quizs Per Topic</span></h1>
                     <ResponsiveContainer width="90%" height={300} className="mx-auto ">
                         <BarChart data={chartData} margin={{
                             top: 20, right: 20, bottom: 20, left: 20,
@@ -61,7 +61,7 @@ const Chart = () => {
 
                 {/* Area Chart  Responsive*/}
                 <div className=" text-center">
-                    <h1 className='text-2xl ml-10 mb-4'>Area Chart: <span className='text-blue-300'>Total Quizs Per Topic</span></h1>
+                    <h1 className='text-2xl ml-10 mb-4'>Area Chart: <span className='text-blue-300'>Check Total Quizs Per Topic</span></h1>
                     <ResponsiveContainer width="90%" height={300} className="mx-auto ">
                         <AreaChart data={chartData}
                             margin={{ top: 20, right: 30, left: 0, bottom: 0 }}>
@@ -86,7 +86,9 @@ const Chart = () => {
 
 
                 {/* Pie Chart  Responsive*/}
-                <div>
+                <div className=" text-center">
+                    <h1 className='text-2xl ml-10 mb-4'>Pie Chart: <span className='text-blue-300'>Check Total Quizs Per Topic</span></h1>
+                    
                     <ResponsiveContainer width="90%" height={300} className="mx-auto ">
 
                         <PieChart margin={{
@@ -94,7 +96,7 @@ const Chart = () => {
                         }}>
                             <Tooltip />
                             <Legend />
-                            <Pie data={chartData} dataKey="total" cx="50%" cy="50%" innerRadius={70} outerRadius={120} fill="#82ca9d" label />
+                            <Pie data={chartData} dataKey="total" cx="50%" cy="50%" innerRadius={70} outerRadius={120} fill="skyblue" label />
                         </PieChart>
                     </ResponsiveContainer>
                 </div>

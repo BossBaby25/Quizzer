@@ -28,16 +28,10 @@ const Blog = () => {
             <div className="collapse collapse-arrow w-4/5 mx-auto rounded-xl">
                 <input type="checkbox" className="peer" />
                 <div className="collapse-title bg-cyan-600 text-xl  text-primary-content peer-checked:bg-indigo-600 peer-checked:text-content">
-                    About useRef()
+                    What is useRef() used for?
                 </div>
                 <div className="collapse-content text-content pt-4 ">
-                    <ul >
-                        <li>The useRef Hook lets us create mutable variables inside functional components. There are three main key points that you should keep in mind when using the useRef Hook.</li>
-                        <li>A ref created with useRef will be created only when the component has been mounted and preserved for the full lifecycle.</li>
-                        <li>Refs can be used for accessing DOM nodes or React elements, and for storing mutable variables (like with instance variables in class components).</li>
-                        <li>Updating a ref is a side effect so it should be done only inside a useEffect (or useLayoutEffect) or inside an event handler.</li>
-                    </ul>
-
+                The useRef Hook allows you to persist values between renders. It can be used to store a mutable value that does not cause a re-render when updated. It can be used to access a DOM element directly.
                 </div>
             </div>
 

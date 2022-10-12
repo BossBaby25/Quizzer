@@ -11,15 +11,11 @@ const Quiz = () => {
 
     const uniqQuizNumber = [...new Set(quizParticipateNumber)];
 
-
-
     const allQuestions = allQuestionsLoad.data;
-
 
     const handleScoreShow = () => {
         setScoreShow(true);
     }
-    // console.log(allQuestions);
     return (
         <div>
             <h1 className="text-3xl font-bold text-center my-10 text-blue-300">Quiz Topic: {allQuestions.name}</h1>

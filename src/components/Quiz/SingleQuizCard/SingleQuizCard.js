@@ -10,10 +10,8 @@ const SingleQuizCard = ({ singleQuestion, index, userCorrectAnswer, setUserCorre
     const [clickIndex, setClickIndex] = useState(-1);
     const [color, setColor] = useState(false);
 
-    // console.log(singleQuestion);
 
     const handleOnchangeForm = event => {
-        // event.preventDefault();
         const newParticipateNumber = [...quizParticipateNumber, index]
         setQuizParticipateNumber(newParticipateNumber)
 
@@ -26,7 +24,6 @@ const SingleQuizCard = ({ singleQuestion, index, userCorrectAnswer, setUserCorre
                 setClickIndex(index);
                 
             }
-            // setUserCorrectAnswer(userCorrectAnswer + 1)
             setColor(true)
             toast.success("WOW ! That's correct.", {
                 position: toast.POSITION.TOP_CENTER

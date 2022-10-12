@@ -14,8 +14,8 @@ const QuizTopicCard = ({ quizTopic }) => {
         <div className="card lg::h-60 lg:card-side bg-slate-200 shadow-2xl mb-8">
             <figure><img src={logo} alt="Album" className='h-60 lg::h-full' /></figure>
             <div className="card-body">
-                <h2 className="card-title">{name}</h2>
-                <p>Total Questions: {total}</p>
+                <h2 className="card-title font-mono text-cyan-500">{name}</h2>
+                <p className='font-bold font-mono text-cyan-400'>Total Questions: {total}</p>
                 <div className="card-actions">
                     <button
                         onClick={handleStartQuiz}

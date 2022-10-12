@@ -18,7 +18,7 @@ const Quiz = () => {
     }
     return (
         <div>
-            <h1 className="text-3xl font-bold text-center my-10 text-blue-300">Quiz Topic: {allQuestions.name}</h1>
+            <h1 className="text-3xl font-bold text-center my-10 text-cyan-600">Quiz Topic: {allQuestions.name}</h1>
             {/* question show  */}
             <div className='flex flex-col-reverse  lg:flex-row justify-center items-center lg:items-start '>
                 <div className='basis-full lg:basis-4/5'>

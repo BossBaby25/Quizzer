@@ -16,7 +16,7 @@ const QuizTopicCard = ({ quizTopic }) => {
             <div className="card-body">
                 <h2 className="card-title">{name}</h2>
                 <p>Total Questions: {total}</p>
-                <div className="card-actions justify-end">
+                <div className="card-actions">
                     <button
                         onClick={handleStartQuiz}
                         className="btn bg-[#3A4256]">
